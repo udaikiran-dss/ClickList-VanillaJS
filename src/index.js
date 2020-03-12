@@ -6,6 +6,8 @@ let addTask = document.getElementById("addTask");
 let ul = document.querySelector("ul");
 
 addTask.addEventListener("click", () => {
+  if (!taskName.value) return;
+
   let found = false;
   for (let task of taskList) {
     if (task.toUpperCase() === taskName.value.toUpperCase()) {
