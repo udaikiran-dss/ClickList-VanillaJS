@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+}
+
+.task-incomplete {
+  color: red;
+}
+.task-complete {
+  text-decoration: line-through;
+  color: green;
+}
