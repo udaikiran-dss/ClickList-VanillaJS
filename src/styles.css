@@ -4,7 +4,7 @@ body {
 }
 
 .task-incomplete {
-  color: red;
+  color: teal;
 }
 .task-complete {
   text-decoration: line-through;

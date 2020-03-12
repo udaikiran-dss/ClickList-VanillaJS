@@ -19,7 +19,11 @@ addTask.addEventListener("click", () => {
     taskList.push(taskName.value);
     let listItem = document.createElement("li");
     listItem.id = taskList.length;
-    listItem.textContent = taskName.value;
+    listItem.textContent = taskName.value
+      .toLowerCase()
+      .split(" ")
+      .map(s => s.charAt(0).toUpperCase() + s.substring(1))
+      .join(" ");
     listItem.className = "task-incomplete";
     listItem.addEventListener("click", () => {
       listItem.className =
